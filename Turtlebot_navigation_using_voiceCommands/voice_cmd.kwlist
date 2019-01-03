@@ -1,0 +1,6 @@
+BACK /1e-5/
+FORWARD /1e-20/
+BINGO /1e-13/
+LEFT /1e-20/
+RIGHT /1e-3/
+STOP /1e-10/

@@ -1,0 +1,14 @@
+<launch>
+<!-- launch Gazebo -->
+<include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+<arg name="world_file" value="$(find BhamareS)/world/assignment3.world"/>
+</include>
+
+<!-- launch Gmapping -->
+<include file="$(find turtlebot_gazebo)/launch/gmapping_demo.launch"/>
+
+<!-- launch Rviz -->
+<include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch"/>
+
+<node pkg="BhamareS" name="obstacle_avoidance" type="move.py" output="screen"/>
+</launch>

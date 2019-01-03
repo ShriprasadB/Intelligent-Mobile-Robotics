@@ -1,0 +1,14 @@
+<launch>
+
+<!-- Launch base bringup-->
+<include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+
+<node pkg="BhamareS" name="nav" type="move.py" output="screen">
+
+<param name="model" value="/usr/share/pocketsphinx/model/en_US/hub4wsj_sc_8k"/>
+<param name="kwlist" value="$(find BhamareS)/voice_cmd.kwlist"/>
+<param name="lexicon" value="$(find BhamareS)/voice_cmd.dic"/>
+
+</node>
+
+</launch>

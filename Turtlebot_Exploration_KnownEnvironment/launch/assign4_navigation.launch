@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="BhamareS" name="nav" type="move.py" output="screen"/>
+
+</launch>
